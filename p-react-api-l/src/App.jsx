@@ -6,8 +6,8 @@ function App() {
   return (
     <>
               <div>
-                      <div>
-                            <h1>The Naruto Database</h1>
+                      <div className="d-flex justify-content-center text-center">
+                            <h1>The Rick and Morty Characters' Database</h1>
                       </div>
 
                       <div>
