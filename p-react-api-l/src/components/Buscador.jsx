@@ -12,11 +12,11 @@ const MiBuscador     =   ({informations,setLaInfo})  =>  {
                                                                         console.log(informations)
 
                                                                         const informationsFiltrados = informations.filter(
-                                                                                                                            x => (  x.name==busqueda ||
-                                                                                                                                    x.species==busqueda ||
-                                                                                                                                    x.gender==busqueda ||
-                                                                                                                                    x.status==busqueda ||
-                                                                                                                                    x.location.name==busqueda
+                                                                                                                            x => (  x.name.toLowerCase().includes(busqueda.toLowerCase(),0) ||
+                                                                                                                                    x.species.toLowerCase().includes(busqueda.toLowerCase(),0) ||
+                                                                                                                                    x.gender.toLowerCase().includes(busqueda.toLowerCase(),0) ||
+                                                                                                                                    x.status.toLowerCase().includes(busqueda.toLowerCase(),0) ||
+                                                                                                                                    x.location.name.toLowerCase().includes(busqueda.toLowerCase(),0)
                                                                                                                                 )
                                                                                                                             
                                                                                                                             )
