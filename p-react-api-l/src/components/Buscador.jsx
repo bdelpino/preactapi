@@ -3,14 +3,15 @@ import {useState} from 'react'
 import {Button} from 'react-bootstrap'
 
 
-
+//START OF MiBuscador COMPONENT
 const MiBuscador     =   ({informations,setLaInfo})  =>  {
 
                                     const [busqueda,setBusqueda] = useState("")
 
                                     const filtrabusqueda = ()   =>  {
-                                                                        console.log(informations)
+                                                                        console.log("Se ejecuta Filtro de Búsqueda")
 
+                                                                        //START OF FILTER FUNCTION
                                                                         const informationsFiltrados = informations.filter(
                                                                                                                             x => (  x.name.toLowerCase().includes(busqueda.toLowerCase(),0) ||
                                                                                                                                     x.species.toLowerCase().includes(busqueda.toLowerCase(),0) ||
@@ -20,6 +21,7 @@ const MiBuscador     =   ({informations,setLaInfo})  =>  {
                                                                                                                                 )
                                                                                                                             
                                                                                                                             )
+                                                                        //END OF FILTER FUNCTION
                                                                                                                             
                                                                         if (busqueda == "") {setLaInfo(informations)}
                                                                             else {setLaInfo(informationsFiltrados)}
@@ -27,17 +29,27 @@ const MiBuscador     =   ({informations,setLaInfo})  =>  {
                                                                     }
 
                                     return  (
-                                                <div>
-                                                        <input type="text" name="Buscador" placeholder="Busque por palabra clave" 
-                                                        onChange={ (e) => {setBusqueda(e.target.value)}} value={busqueda}></input>
-
-                                                        <Button onClick={filtrabusqueda}>Buscar</Button>
-
+                                                //START OF SEARCH DIV
+                                                <div className="searchContainer">
+                                                        <table>
+                                                                <tbody>
+                                                                        <tr>    
+                                                                                <td>
+                                                                                    <input className="searchInput" type="text" name="Buscador" placeholder="Search using a keyword" 
+                                                                                    onChange={ (e) => {setBusqueda(e.target.value)}} value={busqueda}></input>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <Button className="searchButton" onClick={filtrabusqueda}>Search</Button>
+                                                                                </td>
+                                                                        </tr>
+                                                                </tbody>
+                                                        </table>
                                                 </div>
+                                                //END OF SEARCH DIV
                                             )
 
 
 
                                 }
-
+//END OF MiBuscador COMPONENT
 export default MiBuscador

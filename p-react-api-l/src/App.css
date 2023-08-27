@@ -1,0 +1,10 @@
+/*ADD SOME STYLE TO SITE HEADER SIDE*/
+
+.siteHeader {
+                width:100vw;
+                height:15vh;
+                color: lightskyblue;
+                text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+                background-image: url("./assets/img/bgimg.png");
+                background-repeat: repeat;
+            }

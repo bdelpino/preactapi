@@ -1,0 +1,28 @@
+
+/*MODIFIES SEARCH INPUT*/
+.searchInput    {
+                    height: 30px;
+                }
+
+/*MODIFIES SEARCH BUTTON*/
+.searchButton   {
+                    margin-left:1rem;
+                    height: 30px;
+                    border:0px;
+                    padding-bottom:30px;
+
+                }
+
+/*MODIFIES STYLE OF INFO TABLE*/
+.infoTable  {
+                width:90vw;
+
+
+            }
+
+/*ADDS SOME STYLE TO TABLE CONTAINER DIV*/
+.tableContainer {
+                    width:100vw;
+
+                }
+

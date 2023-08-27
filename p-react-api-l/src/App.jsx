@@ -6,11 +6,11 @@ function App() {
   return (
     <>
               <div>
-                      <div className="d-flex justify-content-center text-center">
+                      <div className="d-flex justify-content-center align-items-center text-center siteHeader">
                             <h1>The Rick and Morty Characters' Database</h1>
                       </div>
 
-                      <div>
+                      <div className="d-flex justify-content-center">
                             <MiApi/>
                       </div>
 
