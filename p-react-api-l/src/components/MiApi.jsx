@@ -14,7 +14,7 @@ const MiApi = ()  =>  {
                                                                     try {
                                                                             const url = `https://rickandmortyapi.com/api/character`;
                                                                             const response = await fetch (url);
-                                                                            const data = ((await response.json()).results).sort((a,b) => {return a-b});
+                                                                            const data = ((await response.json()).results).sort((a,b) => {return a.id - b.id});
                                                                             setInformations(data);
                                                                             setInfor(data);
                                                                             
