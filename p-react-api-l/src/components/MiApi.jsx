@@ -38,7 +38,7 @@ const MiApi = ()  =>  {
 
                                 return  (
                                             <div>
-                                                    <div className="d-flex justify-content-center">
+                                                    <div className="d-flex justify-content-center mt-5 mb-5">
                                                             <MiBuscador 
                                                                         informations={infor}
                                                                         setLaInfo={setInformations}
