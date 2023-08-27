@@ -30,7 +30,7 @@ const MiBuscador     =   ({informations,setLaInfo})  =>  {
 
                                     return  (
                                                 //START OF SEARCH DIV
-                                                <div className="searchContainer">
+                                                <div>
                                                         <table>
                                                                 <tbody>
                                                                         <tr>    

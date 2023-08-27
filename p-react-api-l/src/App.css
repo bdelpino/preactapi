@@ -8,3 +8,13 @@
                 background-image: url("./assets/img/bgimg.png");
                 background-repeat: repeat;
             }
+/*ADD SOME STYLE TO SITE FOOTER SECTION*/
+.siteFooter {
+                width:100vw;
+                height: auto;
+            }
+
+.myFooterText  {
+                 color: rgba(141, 84, 31, 0.705);
+                 font-weight:bold;
+                }
