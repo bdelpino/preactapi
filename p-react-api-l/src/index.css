@@ -2,6 +2,7 @@
 /*MODIFIES SEARCH INPUT*/
 .searchInput    {
                     height: 30px;
+                    width: 250px;
                 }
 
 /*MODIFIES SEARCH BUTTON*/

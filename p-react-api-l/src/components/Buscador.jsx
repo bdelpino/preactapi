@@ -30,7 +30,8 @@ const MiBuscador     =   ({informations,setLaInfo})  =>  {
 
                                     return  (
                                                 //START OF SEARCH DIV
-                                                <div>
+                                                <div className="d-flex flex-column">
+                                                        <p>Want to know if Rick is still alive? Let's figure it out.</p>
                                                         <table>
                                                                 <tbody>
                                                                         <tr>    
